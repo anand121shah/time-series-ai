@@ -1,10 +1,16 @@
-/* Global styling */
-body {
-  font-family: 'Arial', sans-serif;
-  background-color: #0d1117; /* Dark theme background */
-  color: #c9d1d9;
+/* Global Styles */
+html, body {
+  height: 100%;
   margin: 0;
   padding: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto', sans-serif;  /* Consistent global font */
+}
+main {
+  flex: 1;
 }
 
 /* Links */
@@ -12,27 +18,12 @@ a, a:visited {
   color: #c9d1d9;
   text-decoration: none;
 }
-
 a:hover {
   color: #ffffff;
   text-decoration: underline;
 }
 
-/* Hero section overlay */
-.hero-section {
-  position: relative;
-}
-
-.hero-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for readability */
-}
-
-/* Section background overrides */
+/* Section Background Overrides */
 .bg-light {
   background-color: #f8f9fa !important;
   color: #0d1117 !important;
@@ -43,4 +34,172 @@ footer {
   position: relative;
   bottom: 0;
   width: 100%;
+}
+
+/* Hero Section Base */
+.hero-section {
+  position: relative;
+  min-height: 80vh;
+  overflow: hidden;
+}
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('../images/background.webp') no-repeat center center/cover;
+  filter: blur(4px);
+  z-index: -2;
+}
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: -1;
+}
+
+/* Elegant Headings */
+h1.display-3 {
+  font-family: 'Roboto', sans-serif;  /* Consistent heading font */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* Hero Section for Services */
+.hero-section-services {
+  position: relative;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.hero-bg-services {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('../images/MLservices.webp') no-repeat center center/cover;
+  filter: blur(3px);
+  z-index: -2;
+}
+.hero-overlay-services {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}
+
+/* Hero Section with teamwork.webp */
+.about-hero {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.about-hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('../images/teamwork.webp') center center/cover no-repeat;
+  filter: blur(3px);
+  z-index: -2;
+}
+.about-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}
+
+/* Hero Section for Contact Page */
+.contact-hero {
+  position: relative;
+  min-height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.contact-hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('../images/survey.webp') no-repeat center center/cover;
+  filter: blur(2px);
+  z-index: -2;
+}
+.contact-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}
+
+/* Card Styling */
+.card {
+  border: none;
+  border-radius: 10px;
+}
+
+/* Two-Column Sections & Spacing */
+section.py-5 > .container .row {
+  margin-bottom: 2rem;
+}
+section.py-5 > .container .row:last-child {
+  margin-bottom: 0;
+}
+section:last-of-type {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* Core Values Icons */
+.fas {
+  color: #f8c040;
+}
+
+/* Custom Button Styles */
+.btn-primary {
+  background: linear-gradient(45deg, #007BFF, #6610f2);
+  border: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background: linear-gradient(45deg, #0056b3, #520dc2);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.btn-outline-primary {
+  color: #6610f2;
+  border-color: #6610f2;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus {
+  color: #ffffff;
+  background-color: #6610f2;
+  border-color: #6610f2;
 }

@@ -27,3 +27,8 @@ def contact():
         flash(f'Thank you for reaching out, {name}! We’ll get back to you soon.', 'success')
         return redirect(url_for('main.contact'))
     return render_template('contact.html')
+
+@main.route('/thankyou')
+def thankyou():
+    return render_template('thankyou.html')
+

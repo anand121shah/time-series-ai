@@ -2,92 +2,118 @@
 {% block title %}Services - Time AI{% endblock %}
 
 {% block content %}
+<!-- HERO SECTION: MLservices.webp in background -->
+<section class="hero-section-services position-relative text-center text-white">
+  <div class="hero-bg-services"></div>
+  <div class="hero-overlay-services"></div>
+  <div class="container position-relative py-5">
+    <h1 class="display-3 fw-bold animate__animated animate__fadeInDown">
+      Automation using Generative AI
+    </h1>
+    <p class="lead animate__animated animate__fadeInUp">
+      Empowering your business with innovative, automated AI solutions that redefine operational excellence.
+    </p>
+  </div>
+</section>
+
+<!-- SERVICES OVERVIEW -->
 <section class="container my-5">
-  <h2 class="mb-4">Our Services</h2>
+  <h2 class="mb-4 text-center">Our Services</h2>
+  <p class="text-center mb-5">
+    At Time AI, we blend advanced technology with industry insights to deliver AI-driven solutions that empower your business.
+    Explore our curated offerings designed to address modern challenges and drive sustainable growth.
+  </p>
+
+  <!-- ROW 1 (3 columns) -->
   <div class="row">
     <!-- 1. AI Apps for Business Processes -->
-    <div class="col-md-4">
-      <div class="card mb-4 shadow-sm">
+    <div class="col-md-4 mb-4" data-aos="fade-up">
+      <div class="card h-100 shadow-sm">
         <div class="card-body">
           <h5 class="card-title">AI Apps for Business Processes</h5>
           <p class="card-text">
-            Custom-built AI applications that streamline and enhance your core business processes.
+            Transform your operations with intelligent applications built to streamline and innovate your core processes.
           </p>
         </div>
       </div>
     </div>
 
     <!-- 2. Automation using Generative AI -->
-    <div class="col-md-4">
-      <div class="card mb-4 shadow-sm">
+    <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+      <div class="card h-100 shadow-sm">
         <div class="card-body">
           <h5 class="card-title">Automation using Generative AI</h5>
           <p class="card-text">
-            Automate repetitive tasks and unlock creative potential with generative AI solutions.
+            Automate routine tasks and unlock creative potential with cutting-edge generative AI solutions.
           </p>
         </div>
       </div>
     </div>
 
     <!-- 3. Mobile & Desktop Apps -->
-    <div class="col-md-4">
-      <div class="card mb-4 shadow-sm">
+    <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+      <div class="card h-100 shadow-sm">
         <div class="card-body">
           <h5 class="card-title">Mobile & Desktop Apps</h5>
           <p class="card-text">
-            Responsive mobile dashboards and desktop applications for your employees and clients.
+            Experience seamless connectivity with responsive apps that engage your team and clients anywhere, anytime.
           </p>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- 4. ML Driven Management Enhancement -->
-    <div class="col-md-4">
-      <div class="card mb-4 shadow-sm">
+  <!-- ROW 2 (3 columns) -->
+  <div class="row">
+    <!-- 4. ML-Driven Management Enhancement -->
+    <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+      <div class="card h-100 shadow-sm">
         <div class="card-body">
           <h5 class="card-title">ML-Driven Management Enhancement</h5>
           <p class="card-text">
-            Leverage machine learning to optimize management strategies and operational efficiency.
+            Leverage data insights to revolutionize decision-making and enhance operational efficiency.
           </p>
         </div>
       </div>
     </div>
 
-    <!-- 5. Awesome Middle Management Framework -->
-    <div class="col-md-4">
-      <div class="card mb-4 shadow-sm">
-        <div class="card-body">
-          <h5 class="card-title">Awesome Middle Management Framework</h5>
-          <p class="card-text">
-            Empower your middle management with AI-driven tools and frameworks for modern challenges.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <!-- 6. Comprehensive Forecasting -->
-    <div class="col-md-4">
-      <div class="card mb-4 shadow-sm">
+    <!-- 5. Comprehensive Forecasting -->
+    <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="400">
+      <div class="card h-100 shadow-sm">
         <div class="card-body">
           <h5 class="card-title">Comprehensive Forecasting</h5>
           <p class="card-text">
-            Forecast everything from product sales to market index trends and directions.
+            Anticipate market trends with advanced predictive models and tailor your strategy for future success.
           </p>
         </div>
       </div>
     </div>
 
-    <!-- 7. High Traffic ML Solutions -->
-    <div class="col-md-4">
-      <div class="card mb-4 shadow-sm">
+    <!-- 6. High-Traffic ML Solutions -->
+    <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="500">
+      <div class="card h-100 shadow-sm">
         <div class="card-body">
           <h5 class="card-title">High-Traffic ML Solutions</h5>
           <p class="card-text">
-            Develop scalable, future-ready ML solutions designed for high traffic and performance.
+            Build scalable, robust ML systems engineered to perform under high-demand conditions.
           </p>
         </div>
       </div>
     </div>
   </div>
 </section>
+{% endblock %}
+
+{% block scripts %}
+  <!-- AOS Library for Scroll Animations -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      AOS.init({
+        duration: 800,
+        once: true,
+      });
+    });
+  </script>
 {% endblock %}
