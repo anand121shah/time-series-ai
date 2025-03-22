@@ -56,14 +56,14 @@
   </div>
 </section>
 
-<!-- CORE VALUES SECTION -->
-<section class="py-5 bg-dark text-light">
+<!-- CORE VALUES SECTION WITH FLOATING CARDS -->
+<section class="py-5">
   <div class="container">
     <h3 class="text-center mb-5" data-aos="zoom-in">Our Core Values</h3>
     <div class="row text-center">
       <!-- Innovation -->
       <div class="col-md-4 mb-4" data-aos="fade-up">
-        <div class="p-3">
+        <div class="card core-value-card p-4">
           <i class="fas fa-lightbulb fa-2x mb-3"></i>
           <h5>Innovation</h5>
           <p class="mt-2">
@@ -73,7 +73,7 @@
       </div>
       <!-- Collaboration -->
       <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
-        <div class="p-3">
+        <div class="card core-value-card p-4">
           <i class="fas fa-handshake fa-2x mb-3"></i>
           <h5>Collaboration</h5>
           <p class="mt-2">
@@ -83,7 +83,7 @@
       </div>
       <!-- Excellence -->
       <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
-        <div class="p-3">
+        <div class="card core-value-card p-4">
           <i class="fas fa-award fa-2x mb-3"></i>
           <h5>Excellence</h5>
           <p class="mt-2">
@@ -94,6 +94,19 @@
     </div>
   </div>
 </section>
+
+<!-- CALL TO ACTION / CONTACT PROMPT SECTION -->
+<section class="py-5 bg-light">
+  <div class="container text-center" data-aos="fade-up" data-aos-delay="150">
+    <h2 class="mb-3">Ready to Connect?</h2>
+    <p class="mb-4">
+      Discover how our advanced AI solutions can transform your business. Learn more about our story, our values, 
+      and what drives us. When you're ready, our team is just a click away.
+    </p>
+    <a href="{{ url_for('main.contact') }}" class="btn btn-primary btn-lg">Contact Us</a>
+  </div>
+</section>
+
 {% endblock %}
 
 {% block scripts %}

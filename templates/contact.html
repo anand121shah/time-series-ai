@@ -7,18 +7,35 @@
   <div class="contact-hero-bg"></div>
   <div class="contact-hero-overlay"></div>
   <div class="container position-relative d-flex flex-column align-items-center justify-content-center text-center" style="min-height: 40vh;">
-    <h1 class="display-4 fw-bold" data-aos="fade-down">Get in Touch</h1>
+    <h1 class="display-4 fw-bold" data-aos="fade-down">Let's Connect</h1>
     <p class="lead mt-3" data-aos="fade-up" data-aos-delay="100">
-      We’re here to help you harness AI for your business.
+      Your vision is our inspiration. We’re excited to hear your story.
     </p>
+  </div>
+</section>
+
+<!-- NARRATIVE INTRODUCTION SECTION -->
+<section class="container my-5">
+  <div class="row">
+    <div class="col-md-10 mx-auto text-center" data-aos="fade-up">
+      <h2 class="mb-3">We'd Love to Hear Your Story</h2>
+      <p class="mb-4">
+        At Time AI, we’re more than just technology experts—we’re your partners in innovation.
+        Whether you’re planning a breakthrough project, facing a challenging problem,
+        or simply curious about the future of AI, we’re here to listen and help.
+      </p>
+      <p>
+        Share your thoughts, ideas, or questions with us, and let’s start a conversation that could transform your business.
+      </p>
+    </div>
   </div>
 </section>
 
 <!-- CONTACT FORM SECTION -->
 <section class="container my-5">
-  <h2>Contact Time AI</h2>
-  <p class="text-muted">
-    Fill out the form below with as much detail as you’d like and let us know how we can help. Fields marked with * are required.
+  <h2 class="text-center mb-4">Drop Us a Line</h2>
+  <p class="text-muted text-center mb-5">
+    Please fill out the form below—fields marked with * are required.
   </p>
   <form id="contact-form" method="POST" action="https://formspree.io/f/xovedenk">
     <!-- Hidden redirect field (optional, not used with AJAX) -->
@@ -32,7 +49,7 @@
         class="form-control" 
         id="name" 
         name="name" 
-        placeholder="Your Name" 
+        placeholder="What's your name?" 
         required
       />
     </div>
@@ -113,7 +130,7 @@
         id="message" 
         name="message" 
         rows="5" 
-        placeholder="Provide details about your request, your project, and any specific timing or requirements you have."
+        placeholder="Tell us about your vision, challenges, or questions—your ideas are important to us!"
         required
       ></textarea>
     </div>
@@ -134,7 +151,7 @@
         once: true,
       });
       
-      // Intercept form submission to use AJAX with fetch
+      // AJAX form submission to keep users within the app
       const form = document.getElementById('contact-form');
       form.addEventListener('submit', function(e) {
         e.preventDefault();
