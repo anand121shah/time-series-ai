@@ -27,8 +27,8 @@
           from automation using Generative AI to ML-driven management enhancements.
         </p>
         <p>
-          Our headquarters serve as the nerve center of our operations, supported by a diverse network of 
-          global contractors. This blend of local expertise and remote talent allows us to stay agile, 
+          Our headquarters serve as the nerve center of our operations, supported by a diverse network of
+          global contractors. This blend of local expertise and remote talent allows us to stay agile,
           adaptive, and perpetually ahead of the curve.
         </p>
       </div>
@@ -43,12 +43,12 @@
       <div class="col-md-12 mb-4" data-aos="fade-left">
         <h2 class="mb-3">How We Work</h2>
         <p>
-          At Time AI, remote collaboration is our superpower. We leverage state-of-the-art digital tools 
+          At Time AI, remote collaboration is our superpower. We leverage state-of-the-art digital tools
           to bring together the brightest minds, no matter where they are in the world.
         </p>
         <p>
-          Our success is built on an evidence-based, rule-driven workflow that emphasizes productivity, 
-          measurable outcomes, and timely delivery above all else. This meticulous process ensures 
+          Our success is built on an evidence-based, rule-driven workflow that emphasizes productivity,
+          measurable outcomes, and timely delivery above all else. This meticulous process ensures
           every project is executed with clarity, efficiency, and excellence.
         </p>
       </div>
@@ -56,40 +56,34 @@
   </div>
 </section>
 
-<!-- CORE VALUES SECTION WITH FLOATING CARDS -->
+<!-- CORE VALUES SECTION WITH ELEGANT GRID LAYOUT -->
 <section class="py-5">
   <div class="container">
     <h3 class="text-center mb-5" data-aos="zoom-in">Our Core Values</h3>
-    <div class="row text-center">
+    <div class="core-values-grid">
       <!-- Innovation -->
-      <div class="col-md-4 mb-4" data-aos="fade-up">
-        <div class="card core-value-card p-4">
-          <i class="fas fa-lightbulb fa-2x mb-3"></i>
-          <h5>Innovation</h5>
-          <p class="mt-2">
-            We relentlessly pursue emerging AI technologies to secure a competitive edge for our clients.
-          </p>
-        </div>
-      </div>
-      <!-- Collaboration -->
-      <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
-        <div class="card core-value-card p-4">
-          <i class="fas fa-handshake fa-2x mb-3"></i>
-          <h5>Collaboration</h5>
-          <p class="mt-2">
-            We blend local expertise with a global network, tailoring solutions that address unique business challenges.
-          </p>
-        </div>
+      <div class="card core-value-card p-4" data-aos="fade-up">
+        <i class="fas fa-lightbulb fa-2x mb-3"></i>
+        <h5>Innovation</h5>
+        <p class="mt-2">
+          We relentlessly pursue emerging AI technologies to secure a competitive edge for our clients.
+        </p>
       </div>
       <!-- Excellence -->
-      <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
-        <div class="card core-value-card p-4">
-          <i class="fas fa-award fa-2x mb-3"></i>
-          <h5>Excellence</h5>
-          <p class="mt-2">
-            We uphold strict, rule-driven workflows to ensure top-tier quality, productivity, and on-time delivery.
-          </p>
-        </div>
+      <div class="card core-value-card p-4" data-aos="fade-up" data-aos-delay="100">
+        <i class="fas fa-award fa-2x mb-3"></i>
+        <h5>Excellence</h5>
+        <p class="mt-2">
+          We uphold strict, rule-driven workflows to ensure top-tier quality, productivity, and on-time delivery.
+        </p>
+      </div>
+      <!-- Collaboration -->
+      <div class="card core-value-card p-4" data-aos="fade-up" data-aos-delay="200">
+        <i class="fas fa-handshake fa-2x mb-3"></i>
+        <h5>Collaboration</h5>
+        <p class="mt-2">
+          We blend local expertise with a global network, tailoring solutions that address unique business challenges.
+        </p>
       </div>
     </div>
   </div>
@@ -101,11 +95,24 @@
     <h2 class="mb-3">Ready to Connect?</h2>
     <p class="mb-4">
       Discover how our advanced AI solutions can transform your business. Learn more about our story, our values, 
-      and what drives us. When you're ready, our team is just a click away.
+      and what drives us. When you’re ready, explore our services or get in touch directly.
     </p>
-    <a href="{{ url_for('main.contact') }}" class="btn btn-primary btn-lg">Contact Us</a>
+    <div class="d-flex justify-content-center">
+      <!-- Both buttons now share the same style -->
+      <a href="{{ url_for('main.services') }}" class="btn btn-primary btn-lg mx-2">Explore Our Services</a>
+      <a href="{{ url_for('main.contact') }}" class="btn btn-primary btn-lg mx-2">Contact Us</a>
+    </div>
   </div>
 </section>
+
+<!-- Inline CSS for Core Values Grid Layout -->
+<style>
+.core-values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+</style>
 
 {% endblock %}
 

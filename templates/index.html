@@ -59,10 +59,26 @@
       Learn about our story, explore our innovations, or simply get in touch with our team.
     </p>
     <div class="d-flex justify-content-center">
-      <a href="{{ url_for('main.about') }}" class="btn btn-outline-primary mx-2">Our Story</a>
+      <!-- Notice the 'btn-custom-dark' class added here -->
+      <a href="{{ url_for('main.about') }}" class="btn btn-outline-primary btn-custom-dark mx-2">Our Story</a>
       <a href="{{ url_for('main.services') }}" class="btn btn-primary mx-2">Our Innovations</a>
-      <a href="{{ url_for('main.contact') }}" class="btn btn-outline-primary mx-2">Let's Connect</a>
+      <a href="{{ url_for('main.contact') }}" class="btn btn-outline-primary btn-custom-dark mx-2">Let's Connect</a>
     </div>
   </div>
 </section>
+
+<!-- Custom CSS Overrides -->
+<style>
+/* Darker default appearance for outline-primary buttons with .btn-custom-dark */
+.btn-outline-primary.btn-custom-dark {
+  color: #084298;         /* Darker text color */
+  border-color: #084298;  /* Darker border color */
+}
+
+.btn-outline-primary.btn-custom-dark:hover {
+  color: #ffffff;         /* White text on hover */
+  background-color: #084298;
+  border-color: #084298;
+}
+</style>
 {% endblock %}
